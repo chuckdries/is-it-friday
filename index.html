@@ -31,8 +31,8 @@
 <body>
     <h1>today <span id="indication">might be?</span> friday</h1>
     <script>
-        indication.innerText = (d = (new Date()).getDay() == 5 ) ? "is" : "is not";
-        document.title = d ? "today is friday" : "today is not friday";
+        indication.innerText = (d = (new Date()).getDay() === 5 ) ? "is" : "is not";
+        document.title = `today ${d ? "is" : "is not"} friday`;
     </script>
 </body>
 </html>
