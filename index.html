@@ -33,12 +33,7 @@
 <body>
     <h1>today <span id="indication">might be?</span> friday</h1>
     <script>
-        var d = new Date();
-        if (d.getDay() == 5) {
-            indication.innerText = "is"
-        } else {
-            indication.innerText = "is not"
-        }
+        indication.innerText = new Date.getDay() == 5 ? "is" : "is not";
     </script>
 </body>
 </html>
