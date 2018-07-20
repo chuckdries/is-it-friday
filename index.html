@@ -25,11 +25,20 @@
         #indication {
             text-decoration: underline;
         }
-
+        #party-line {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 64px;
+            background-image: url("conga-parrot.gif");
+            background-size: 64px;
+        }
     </style>
 </head>
 <body>
     <h1>today <span id="indication">might be?</span> friday</h1>
+    <div id="party-line"></div>
     <script>
         indication.innerText = (d = (new Date()).getDay() === 5 ) ? "is" : "is not";
         document.title = `today ${d ? "is" : "is not"} friday`;
